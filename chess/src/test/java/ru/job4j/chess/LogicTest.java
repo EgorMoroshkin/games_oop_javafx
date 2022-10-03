@@ -9,7 +9,6 @@ import ru.job4j.chess.firuges.black.KingBlack;
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-
 public class LogicTest {
 
     @Test
@@ -42,6 +41,7 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             logic.move(Cell.C1, Cell.C2);
         });
-        assertThat(exception.getMessage()).isEqualTo(String.format("Could not move by diagonal from %s to %s", Cell.C1, Cell.C2));
+        assertThat(exception.getMessage()).isEqualTo(String.format("Could not move by diagonal from %s to %s", Cell.C1,
+                Cell.C2));
     }
 }
