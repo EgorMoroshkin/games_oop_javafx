@@ -23,7 +23,8 @@ class BishopBlackTest {
     public void way() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
         bishopBlack.way(Cell.G5);
-        assertThat(bishopBlack.way(Cell.G5)).isEqualTo(new Cell[]{Cell.D2, Cell.E3, Cell.F4, Cell.G5});
+        assertThat(bishopBlack.way(Cell.G5)).
+                isEqualTo(new Cell[]{Cell.D2, Cell.E3, Cell.F4, Cell.G5});
     }
 
     @Test
